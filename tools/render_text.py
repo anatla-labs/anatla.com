@@ -25,7 +25,7 @@ COPY = [
     ("headline", "CULTIVATING HUMAN SAPIENCE", None),
     ("details", "The Founding Retreat, 9th – 11th February 2027", None),
     ("register", "Register your interest here",
-     ("here", "mailto:dan@anatla.com?subject=The%20Founding%20Retreat")),
+     ("here", "mailto:shona@anatla.com?subject=The%20Founding%20Retreat")),
 ]
 PAD = 20  # font units of breathing room round each line
 
