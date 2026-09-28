@@ -27,6 +27,6 @@ Adding pages later: drop another `.html` file next to `index.html` and link to i
 | A     | @    | 185.199.109.153       | DNS only |
 | A     | @    | 185.199.110.153       | DNS only |
 | A     | @    | 185.199.111.153       | DNS only |
-| CNAME | www  | anatla.github.io      | DNS only |
+| CNAME | www  | anatla-labs.github.io      | DNS only |
 
 Leave the records unproxied (grey cloud) so GitHub can issue the HTTPS certificate. Then in the repo's Pages settings tick "Enforce HTTPS".
