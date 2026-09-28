@@ -1,0 +1,105 @@
+/* Stand-in for ABC Arizona Flare until the web licence is sorted. See README. */
+@font-face {
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/spectral-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Spectral";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/spectral-500.woff2") format("woff2");
+}
+
+:root {
+  --woad: #5876d5;
+  --ink: #000;
+  --line: rgba(0, 0, 0, 0.55);
+  /* Inset of the frame from the viewport edge; 3.5% of width in the design */
+  --inset: 3.5vw;
+  --serif: "Spectral", "Times New Roman", Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { height: 100%; margin: 0; }
+
+body {
+  background: var(--woad);
+  color: var(--ink);
+  font-family: var(--serif);
+  padding: var(--inset);
+  -webkit-font-smoothing: antialiased;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 2 * var(--inset));
+  min-height: calc(100dvh - 2 * var(--inset));
+  border: 1px solid var(--line);
+}
+
+.panel {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.panel--logo { border-bottom: 1px solid var(--line); }
+
+.logo { margin: 0; line-height: 0; }
+.logo img {
+  /* 36% of viewport width in the design; wider on phones so it still reads */
+  width: clamp(200px, 36vw, 560px);
+  height: auto;
+  display: block;
+}
+
+.headline,
+.strap,
+.details { margin: 0; }
+
+.headline {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(1.9rem, min(6.2vh, 9.5vw), 5.4rem);
+  line-height: 1.05;
+}
+
+.strap {
+  font-weight: 400;
+  font-size: clamp(1.3rem, min(4.1vh, 6.4vw), 3.6rem);
+  line-height: 1.15;
+  margin-top: 0.15em;
+}
+
+.details {
+  font-weight: 400;
+  font-size: clamp(1rem, min(3vh, 4.6vw), 2.6rem);
+  line-height: 1.4;
+  margin-top: 1.6em;
+}
+
+.details a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.details a:hover, .details a:focus-visible { text-decoration-thickness: 2px; }
+
+/* Phones: the two halves no longer need to be equal, let content set height */
+@media (max-width: 600px) {
+  :root { --inset: 16px; }
+  .panel { flex-basis: auto; padding: 3rem 1.25rem; }
+  .panel--logo { flex-grow: 0.8; }
+}
