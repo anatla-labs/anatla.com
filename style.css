@@ -52,8 +52,7 @@ body {
 .panel--copy { --s: 1; }
 
 .t { display: block; height: auto; }
-.t--headline { width: min(calc(37.5% * var(--s)), 50vh); }
-.t--strap    { width: min(calc(49.5% * var(--s)), 66vh); margin-top: -0.8vh; }
+.t--headline { width: min(calc(91.8% * var(--s)), 100%, 122vh); }
 .t--details  { width: min(calc(54.7% * var(--s)), 73vh); margin-top: 6vh; }
 .t--register { width: min(calc(30.5% * var(--s)), 41vh); margin-top: 1.2vh; }
 
