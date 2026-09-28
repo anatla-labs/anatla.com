@@ -4,14 +4,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/spectral-400.woff2") format("woff2");
+  src: url("assets/fonts/spectral-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Spectral";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/assets/fonts/spectral-500.woff2") format("woff2");
+  src: url("assets/fonts/spectral-500.woff2") format("woff2");
 }
 
 :root {
