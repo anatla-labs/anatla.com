@@ -1,0 +1,6 @@
+# Licensed font files must never enter this public repo (Dinamo desktop licence)
+*.otf
+*.ttf
+*.woff
+*.woff2
+.DS_Store
