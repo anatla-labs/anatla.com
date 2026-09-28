@@ -22,7 +22,8 @@ HTML = ROOT / "index.html"
 
 # (css class, text, {link word: href})
 COPY = [
-    ("headline", "CULTIVATING HUMAN SAPIENCE", None),
+    ("headline", "WISER WORK", None),
+    ("strap", "Developing Human Capacity", None),
     ("details", "The Founding Retreat, 9th – 11th February 2027", None),
     ("register", "Register your interest here",
      ("here", "mailto:shona@anatla.com?subject=The%20Founding%20Retreat")),
