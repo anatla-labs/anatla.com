@@ -57,7 +57,8 @@ body {
 .t--details  { width: min(calc(54.7% * var(--s)), 73vh); margin-top: 6vh; }
 .t--register { width: min(calc(30.5% * var(--s)), 41vh); margin-top: 1.2vh; }
 
-.t a { cursor: pointer; }
+/* Browsers give SVG <a> the default link colour; keep it ink like the design */
+.t a { color: inherit; cursor: pointer; }
 .t a .ul { fill: currentColor; }
 .t a:hover .ul, .t a:focus .ul { fill: var(--ink); height: 40px; }
 .t a:focus { outline: none; }
