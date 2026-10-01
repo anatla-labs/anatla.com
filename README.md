@@ -7,7 +7,7 @@ Holding page for Anatla. Plain HTML + CSS, no build step. Hosted on GitHub Pages
 - `index.html` – the page copy. The "Register your interest" link is the `mailto:` in the last paragraph; swap it for the form URL when the Brevo/MailerLite decision is made.
 - `style.css` – layout, colours and the SVG line widths. Brand colours: woad `#5876d5`, peach `#fc7e49`, sienna `#c04729`, ink `#000`.
 - `assets/logo.svg` – vector logo extracted from `Anatla_Logo_colour.pdf`. Uses `currentColor`, so recolour it with CSS.
-- `assets/og.png` – social share image (the designer's holding-page artwork).
+- `assets/og.png` – social share image: a 1200×900 headless-Chrome screenshot of `index.html`. Retake it when the copy changes.
 
 ## Fonts
 
