@@ -51,11 +51,17 @@ body {
    wide viewports from overflowing the lower panel. --s scales everything up on phones. */
 .panel--copy { --s: 1; }
 
-.t { display: block; height: auto; }
+.t { display: block; height: auto; max-width: 100%; }
 .t--headline { width: min(calc(37.5% * var(--s)), 50vh); }
-.t--strap    { width: min(calc(49% * var(--s)), 65.3vh); margin-top: -0.8vh; }
-.t--details  { width: min(calc(54.7% * var(--s)), 73vh); margin-top: 6vh; }
-.t--register { width: min(calc(30.5% * var(--s)), 41vh); margin-top: 1.2vh; }
+/* One sentence at the same type size as the status line. Two lines on desktop;
+   on phones those would be squeezed to fit, so a three-line break is shown instead. */
+.t--defn-a   { width: min(calc(73% * var(--s)), 97.3vh); margin-top: 2.5vh; }
+.t--defn-b   { width: min(calc(71.0% * var(--s)), 94.6vh); margin-top: 0.3vh; }
+.t--defn-m1  { width: calc(48.2% * var(--s)); margin-top: 1.5rem; }
+.t--defn-m2  { width: calc(47.0% * var(--s)); margin-top: 0.3vh; }
+.t--defn-m3  { width: calc(48.1% * var(--s)); margin-top: 0.3vh; }
+.t--defn-m1, .t--defn-m2, .t--defn-m3 { display: none; }
+.t--status   { width: min(calc(46.5% * var(--s)), 62vh); margin-top: 5vh; }
 
 /* Browsers give SVG <a> the default link colour; keep it ink like the design */
 .t a { color: inherit; cursor: pointer; }
@@ -75,5 +81,7 @@ body {
   .panel { flex-basis: auto; padding: 3rem 1.25rem; }
   .panel--logo { flex-grow: 0.8; }
   .panel--copy { --s: 1.75; }
-  .t--details { margin-top: 2rem; }
+  .t--defn-a, .t--defn-b { display: none; }
+  .t--defn-m1, .t--defn-m2, .t--defn-m3 { display: block; }
+  .t--status { margin-top: 2rem; }
 }

@@ -23,10 +23,13 @@ HTML = ROOT / "index.html"
 # (css class, text, {link word: href})
 COPY = [
     ("headline", "WISER WORK", None),
-    ("strap", "Cultivating Human Sapience", None),
-    ("details", "The Founding Retreat, 9th – 11th February 2027", None),
-    ("register", "Register your interest here",
-     ("here", "mailto:shona@anatla.com?subject=The%20Founding%20Retreat")),
+    # one sentence; two lines on desktop, re-broken over three on phones (CSS swaps them)
+    ("defn-a", "Cultivating Human Sapience: the capacity for practical wisdom,", None),
+    ("defn-b", "self-awareness, and the ability to act with reasoned judgment.", None),
+    ("defn-m1", "Cultivating Human Sapience: the capacity", None),
+    ("defn-m2", "for practical wisdom, self-awareness, and", None),
+    ("defn-m3", "the ability to act with reasoned judgment.", None),
+    ("status", "Currently in stealth mode. See you soon.", None),
 ]
 PAD = 20  # font units of breathing room round each line
 
